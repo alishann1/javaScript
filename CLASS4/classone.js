@@ -6,7 +6,7 @@ console.log(12+12)
 var a = 12;
 var b = 15;
 console.log(a + b)
-a = b + 50;
+a = b + 51;
 console.log(a);
 
 //DATA TYPES
