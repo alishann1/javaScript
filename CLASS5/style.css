@@ -1,0 +1,15 @@
+.table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: lightblue;
+  border-radius: 10px;
+  overflow: hidden;
+}
