@@ -1,137 +1,103 @@
-// Array destructuring 
-var a = ["a"  ,"c" , "d" ,"e" ,"f" ,"g"];
+// Array Destructuring
 
-// a[0] = "add"
-// console.log(a[0])
+var myArray = ["apple", "mango", "grape", "banana"]
 
-// var item1 = a[0];
-// var item2 = a[1];
-// var item3 = a[2];
-// var item4 = a[3];
-// var item5 = a[4];
-// var item6 = a[5];
-// var [item1 , item2 , item3 , item4 , item5 , item6]= a 
-// console.log(item1 , item2 , item3 , item4 , item5 , item6)
+console.log(myArray)
+myArray[0] = "zero"
+console.log(myArray)
 
+var item1 = myArray[0];
+var item2 = myArray[1];
+var item3 = myArray[2];
+var item4 = myArray[3];
 
-
-// object destructugg
+var [item1 , item2 , item3 , item4] = myArray 
+console.log(item1 , item2 , item3 , item4 )
+console.log(item4)
 
 
-// var user =  {
-//   id:32435,
-//   fullname:"John",
-//   age:30
-// }
+// Object Destructuring
 
 
-// var {id:userid , fullname:username , age    } = user
-
-// console.log(userid, username)
-
-
-
-
-//   Neste desturing 
-// [{},{}]
-var u = [
-    {
-        id:213234,
-        fullname:"John",
-    }
-]
-
-// var myvariable = u[0].fullname
-
-//    var [{fullname:myvar}] = u
-// console.log(myvar)
-
-
-
-
-
-
-// var users = [
-//  {
-//     id:2344, 
-//     fullname:"John",
-//     age:30,
-//     address:{
-//         city:"London",
-//         country:"UK"
-//     }
-//  }
-
-// ]
-
-// var [{address:{city:userCity}}]        = users
-
-// console.log(userCity)
-
-
-// ______________________________________________________________
-
-// function declaration
-// function sum(){
-    // console.log(2+5)
-//    return [1,2,3]
-// }
-
-
-// call
-// var res= sum()
-// console.log(res)
-
-
-// function expression
-
-// var sum =  function (){
-//     return 'a'
-// }
-
-
-// sum()
-
-
-// arrow funtions
-
-// var sum = ()=>{
-//     return 'a'
-// }
-
-
-// var sum = ()=> 'a'
-
-
-// sum()
-
-
-
-function sum(a,b) {
-    return  a+b
+var user = {
+    name : "Ali",
+    id : 5698,
+    age : 21,
 }
 
-var res1=  sum(100 , 324)
-var res2=  sum(42334324 , 2432)
+var {name:userName, id:userId, age:userAge} = user
 
-console.log(res1, res2)
+console.log(userAge, userId)
 
-// Nested Object Destructuring 
 
-var user = [
+
+//   Nested Destructuring 
+
+
+var nested =
+    [
+        {
+            userName: "John",
+            id: 1234
+        }
+        ,
+
+        {
+            stdName: "Ali",
+            stdId: 5698
+        }
+    ]
+
+var myVar = nested[1].stdName
+console.log(myVar)
+
+
+var users = [
     {
-        id:2344,
-        fullname:"John",
-        age:30,
-        address:{
-            city:"London",
-            country:"UK"
+        id: 2344,
+        fullname: "John",
+        age: 30,
+        address: {
+            city: "London",
+            country: "UK"
         }
     }
+
 ]
 
-var [{address:{country:userCountry}}] = user
+var [{ address: { country: userCountry } }] = users
 console.log(userCountry)
 
-var [{id:userid}] = user
-console.log(userid)
+// ------------------------------------------------
+
+// Function Declaration
+
+function sum() {
+    console.log(15 + 5)
+    return [1, 2, 3]
+}
+var result = sum()
+console.log(result)
+
+// Function Expression
+
+var divide = function (a, b) {
+    return a / b;
+}
+console.log(divide(10,2))
+
+// Arrow Function
+
+var greet = (name) => {
+    console.log("Hello", name)
+}
+greet("John!")
+
+var add = (a, b) => {
+    return a + b;
+}
+var res1 = add(50, 20)
+var res2 = add(60, 30)
+var res3 = add(70, 55)
+
+console.log(res1, res2)
