@@ -10,6 +10,7 @@ hello(user)
 
 
 // user 1 register
+
 var [i1, i2] = ["apple", "orange"]
 
 function items([item1, item2]) {
@@ -20,28 +21,29 @@ items(["apple", "orange"])
 console.log("hello world")
 
 
-function divide(a=0, b=0){
-    return a+b
+function divide(a = 0, b = 0) {
+    return a + b
 }
 
 
-var res= divide( 21,43)
+var res = divide(21, 43)
 console.log(res)
 
 
 
-function chrome(user="guest"){
-  console.log(user , "mode")
+function chrome(user = "guest") {
+    console.log(user, "mode")
 }
 
 chrome("ali")
 
+// Rest Parameters
 
-function hobbies(username ,  age  , ...hobbies){
-    console.log(username, age , hobbies)
+function hobbies(username, age, ...hobbies) {
+    console.log(username, age, hobbies)
 }
 
-hobbies("ALex" , 21 , "swimming" , "reading" , "gaming")
+hobbies("Alex", 21, "swimming", "reading", "gaming")
 
 
 
@@ -55,15 +57,14 @@ var numericAge = String(age)
 console.log(typeof numericAge)
 
 
+// ___________________________
 
-___________________________
 
-
-// string Concatenation
+// String Concatenation
 
 var str1 = "hello "
 var str2 = "world"
-var str3 = str1+ str2
+var str3 = str1 + str2
 console.log(str3)
 
 
