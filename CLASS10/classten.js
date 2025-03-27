@@ -52,7 +52,7 @@ res()
 // Strings methods
 
 var fname = "alex-gilgit-pakistan";  // new String("Alex")
-var fname = new String("ALex");
+var fname = new String("Alex");
 console.log(fname.toUpperCase())
 var trimName = fname.trim()
 console.log(trimName, trimName.length)
