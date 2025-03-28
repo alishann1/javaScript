@@ -32,7 +32,7 @@ function sum(a) {
     a()
 }
 var res = sum(function () {
-    console.log("inner func")
+    console.log("inner function")
 })
 console.log(res)
 
@@ -42,7 +42,7 @@ function hof(a) {
 
 
 var res = hof(function () {
-    console.log("i am returning function")
+    console.log("I am returning a function")
 })
 console.log(res)
 
