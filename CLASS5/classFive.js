@@ -114,7 +114,7 @@ product.stock = 123
 console.log(product)
 
 
-// computed properties 
+// Computed properties 
 
 
 var users = [
