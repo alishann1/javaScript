@@ -133,3 +133,20 @@ var users = [
     ];
 
     console.log(users.length)
+
+    var hello = [
+      {
+        name: "John",
+        age: 21,
+        email: "abc@example.com",
+        city: "Gilgit",
+        country: "Pakistan",
+        address:{
+            street:"123 Main St",
+            city:"Gilgit",
+            country:"Pakistan"
+        }
+      }
+    ];
+
+    console.log(hello.length)
