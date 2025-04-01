@@ -6,12 +6,12 @@
 
 var fruits = ["Apple" , "banana" , "grapes", 21 , true , 12n , undefined , null , [1,2,3]]
 
-// objects
+// Objects
 
 var user = {
     name:"John",
     age:21,
-    email:"abc@example.com",
+    email:"john@example.com",
     city:"Gilgit",
     country:"Pakistan"
 }
@@ -20,14 +20,14 @@ var users = [
   {
     name: "John",
     age: 21,
-    email: "abc@example.com",
+    email: "john@example.com",
     city: "Gilgit",
     country: "Pakistan",
   },
   {
-    name: "alex",
+    name: "Alex",
     age: 23,
-    email: "adsdf@example.com",
+    email: "alex@example.com",
     city: "Gilgit",
     country: "Pakistan",
   },
@@ -38,14 +38,14 @@ var users = [
       {
         name: "John",
         age: 21,
-        email: "abc@example.com",
+        email: "john@example.com",
         city: "Gilgit",
         country: "Pakistan",
       },
       {
-        name: "alex",
+        name: "Alex",
         age: 23,
-        email: "adsdf@example.com",
+        email: "alex@example.com",
         city: "Gilgit",
         country: "Pakistan",
       },
