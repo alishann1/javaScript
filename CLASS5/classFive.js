@@ -4,16 +4,16 @@
 
 // _______________________
 
-var fruits = ["Apple" , "banana" , "grapes", 21 , true , 12n , undefined , null , [1,2,3]]
+var fruits = ["Apple", "banana", "grapes", 21, true, 12n, undefined, null, [1, 2, 3]]
 
 // Objects
 
 var user = {
-    name:"John",
-    age:21,
-    email:"john@example.com",
-    city:"Gilgit",
-    country:"Pakistan"
+  name: "John",
+  age: 21,
+  email: "john@example.com",
+  city: "Gilgit",
+  country: "Pakistan"
 }
 
 var users = [
@@ -35,47 +35,47 @@ var users = [
 
 console.log(users);
 var users = [
-      {
-        name: "John",
-        age: 21,
-        email: "john@example.com",
-        city: "Gilgit",
-        country: "Pakistan",
-      },
-      {
-        name: "Alex",
-        age: 23,
-        email: "alex@example.com",
-        city: "Gilgit",
-        country: "Pakistan",
-      },
-    ];
+  {
+    name: "John",
+    age: 21,
+    email: "john@example.com",
+    city: "Gilgit",
+    country: "Pakistan",
+  },
+  {
+    name: "Alex",
+    age: 23,
+    email: "alex@example.com",
+    city: "Gilgit",
+    country: "Pakistan",
+  },
+];
 
 
 
-    var nums = [1,2,3,4];
-    console.log(nums , nums.length)
+var nums = [1, 2, 3, 4];
+console.log(nums, nums.length)
 
-var gn = nums[3] +6766
+var gn = nums[3] + 6766
 console.log(gn)
 console.log(nums)
 
 var key1 = 'id'
 var product = {
-    [key1]:3234554666, 
-    pname:"Shoes",
-    price:1799,
-    discount:10,
-    rating :4.5
+  [key1]: 5698,
+  pname: "Shoes",
+  price: 1799,
+  discount: 10,
+  rating: 4.5
 }
-var productName= product.pname
-bracket 
-var productName = product[pname]
+var productName = product.pname
+// bracket 
+// var productName = product[pname]
 console.log(product)
 console.log(product[key1])
 
 
-const arr= ["a" ,"b" , "c"];
+const arr = ["a", "b", "c"];
 console.log(arr)
 // get
 console.log(arr[0])
@@ -84,18 +84,18 @@ arr[0] = "updated"
 console.log(arr[0])
 console.log(arr)
 //add
-arr[3] ="adding"
+arr[3] = "adding"
 console.log(arr)
 
 
 
 
 var product = {
-    id:3234554666, 
-    pname:"Shoes",
-    price:1799,
-    discount:10,
-    rating :4.5
+  id: 5698,
+  pname: "Shoes",
+  price: 1799,
+  discount: 10,
+  rating: 4.5
 }
 
 // get 1> bracket 
@@ -105,11 +105,11 @@ console.log(product.id)
 console.log(product["id"])
 
 // values update
-product.id =233244
+product.id = 4949
 console.log(product)
 
 
-add
+// add
 product.stock = 123
 console.log(product)
 
@@ -118,18 +118,18 @@ console.log(product)
 
 
 var users = [
-      {
-        name: "John",
-        age: 21,
-        email: "abc@example.com",
-        city: "Gilgit",
-        country: "Pakistan",
-        address:{
-            street:"123 Main St",
-            city:"Gilgit",
-            country:"Pakistan"
-        }
-      }
-    ];
+  {
+    name: "John",
+    age: 21,
+    email: "abc@example.com",
+    city: "Gilgit",
+    country: "Pakistan",
+    address: {
+      street: "123 Main St",
+      city: "Gilgit",
+      country: "Pakistan"
+    }
+  }
+];
 
-    console.log(users.length)
+console.log(users.length)
