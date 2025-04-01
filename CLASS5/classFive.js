@@ -68,8 +68,11 @@ var product = {
   discount: 10,
   rating: 4.5
 }
+
+// Dot notation
 var productName = product.pname
-// bracket 
+
+// Bracket notation
 // var productName = product[pname]
 console.log(product)
 console.log(product[key1])
@@ -77,12 +80,15 @@ console.log(product[key1])
 
 const arr = ["a", "b", "c"];
 console.log(arr)
+
 // get
 console.log(arr[0])
+
 // update
 arr[0] = "updated"
 console.log(arr[0])
 console.log(arr)
+
 //add
 arr[3] = "adding"
 console.log(arr)
