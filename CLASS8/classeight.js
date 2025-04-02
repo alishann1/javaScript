@@ -14,7 +14,7 @@ console.log(myVar)
 
 var a = 140
 console.log(a)
-// global scope 
+// Global scope 
 
 
 {
