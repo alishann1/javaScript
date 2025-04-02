@@ -1,5 +1,5 @@
 console.log("start")
-var user = { username: "Alex", age: "21", email: "abc@example.com" }
+let user = { username: "Alex", age: "21", email: "abc@example.com" }
 
 function hello({ username, age }) {
     console.log("Hello!", username, "your age is", age)
@@ -11,7 +11,7 @@ hello(user)
 
 // user 1 register
 
-var [i1, i2] = ["apple", "orange"]
+let [i1, i2] = ["apple", "orange"]
 
 function items([item1, item2]) {
     console.log(item1, item2)
