@@ -2,11 +2,11 @@ console.log("start")
 let user = { username: "Alex", age: "21", email: "abc@example.com" }
 
 function hello({ username, age }) {
-    console.log("Hello!", username, "your age is", age)
+    console.log("Hello! My name is", username, "and I am", age, "years old.")
     console.log(username)
 }
-console.log("end")
 hello(user)
+console.log("end")
 
 
 // user 1 register
@@ -21,16 +21,16 @@ items(["apple", "orange"])
 console.log("hello world")
 
 
-function divide(a = 0, b = 0) {
+function add(a = 0, b = 0) {
     return a + b
 }
 
 
-var res = divide(21, 43)
+var res = add(21, 43)
 console.log(res)
 
 
-
+// Default Parameters
 function chrome(user = "guest") {
     console.log(user, "mode")
 }
