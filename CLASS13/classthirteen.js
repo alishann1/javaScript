@@ -1,11 +1,15 @@
 // objects 
-let userOne  = {
-    fname :"alex" , 
-    age:21 , 
-    city:"gilgit", 
-    status : "active",
-    profile:function(){
-            console.log("hello " + this.fname)
+
+// The code below is not optimized properly because it is not efficient and the function
+// will be called each time a user is created.
+
+let userOne = {
+    fname: "alex",
+    age: 21,
+    city: "gilgit",
+    status: "active",
+    profile: function () {
+        console.log("hello " + this.fname)
     }
 }
 
@@ -14,39 +18,46 @@ let userOne  = {
 
 // step two
 
-function profile(){
+// This code is one step optimized as it won't run the function every time 
+// a user is created but it is still not optimized enough incase we add more methods in the object
+
+function profile() {
     console.log("hello " + this.fname)
 }
-let userTwo  = {
-    fname :"alex" , 
-    age:21 , 
-    city:"gilgit", 
-    status : "active",
-    profile:profile
+let userTwo = {
+    fname: "Alex",
+    age: 21,
+    city: "Gilgit",
+    status: "active",
+    profile: profile
 }
 
 
 
 
 // step 3 
+
+// This code is one step more optimized as it has arranged multiple methods inside an object
+// but still we need to add a method in both the objects and add the key and value
+
 var userMethods = {
-    profile: function(){
+    profile: function () {
         console.log("hello " + this.fname)
-    }, 
-    changeName: function(newName){
+    },
+    changeName: function (newName) {
         this.fname = newName
     },
-    changeAge: function(newAge){
+    changeAge: function (newAge) {
         this.age = newAge
     }
 }
 userMethods.profile()
-let userThree  = {
-    fname :"alex" , 
-    age:21 , 
-    city:"gilgit", 
-    status : "active",
-    profile:userMethods.profile
+let userThree = {
+    fname: "alex",
+    age: 21,
+    city: "gilgit",
+    status: "active",
+    profile: userMethods.profile
 }
 
 user.profile()
@@ -55,9 +66,9 @@ user.profile()
 
 
 
- 
+
 let users = [];
-function createUser(fullName , email , age , city){
+function createUser(fullName, email, age, city) {
     // step1
     let user = {};
     // step2
@@ -65,17 +76,17 @@ function createUser(fullName , email , age , city){
     user.email = email;
     user.age = age;
     user.city = city;
-    user.profile = function(){
+    user.profile = function () {
         console.log("Hello " + this.fname)
     }
-   // step3
-   users.push(user)
-   //step4 
-   return "User Registered Successfully!!!";
+    // step3
+    users.push(user)
+    //step4 
+    return "User Registered Successfully!!!";
 }
 
-let user1 = createUser("Ali" , "ali@gmail.com" ,  21 , "GILGIT")
-let user2 = createUser("Alex" , "alex@gmail.com" ,  22 , "GILGIT")
+let user1 = createUser("Ali", "ali@gmail.com", 21, "GILGIT")
+let user2 = createUser("Alex", "alex@gmail.com", 22, "GILGIT")
 
 // console.log(user1)
 users[0].profile()
@@ -84,17 +95,17 @@ users[0].profile()
 
 
 
-const userFour =  Object.create(null); // {}
+const userFour = Object.create(null); // {}
 console.log(user)
 
 
-let u1= {
-    key1:"value1",
-    key2:"value2",
+let u1 = {
+    key1: "value1",
+    key2: "value2",
 }
 
-let a2= {
-    key3:"value3"
+let a2 = {
+    key3: "value3"
 }
 
 console.log(a2.key1)
@@ -105,7 +116,7 @@ console.log(a3.key1)
 
 
 
-var a ="fsdfds"
+var a = "fsdfds"
 var b = new String("sfsd")
 console.log(b)
 console.log(b._proto_.to)
@@ -125,36 +136,36 @@ console.log(user.profile())
 
 
 const methods = {
-    profile: function(){
+    profile: function () {
         console.log("Hello " + this.fname)
-    }, 
-    changeName: function(newName){
+    },
+    changeName: function (newName) {
         this.fname = newName
     },
-    changeAge: function(newAge){
+    changeAge: function (newAge) {
         this.age = newAge
     }
-, 
-    sing  :function(){
+    ,
+    sing: function () {
         return " lalaalalalal"
     }
 }
 function registerUser(fnmae, email, password) {
-//    step one 
-   const user  =  Object.create(methods);
-   // step two
-   user.fname = fnmae;
-   user.email = email;
-   user.password = password;
+    //    step one 
+    const user = Object.create(methods);
+    // step two
+    user.fname = fnmae;
+    user.email = email;
+    user.password = password;
 
 
-   // step three
-   return user
+    // step three
+    return user
 
 }
 
 
 
 
-const a1 = registerUser("Alex" , "alex@gamil.com" ,  "dasdkgj324")
+const a1 = registerUser("Alex", "alex@gamil.com", "dasdkgj324")
 console.log(u1.profile())
