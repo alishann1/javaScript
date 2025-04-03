@@ -1,5 +1,5 @@
 // objects 
-let user  = {
+let userOne  = {
     fname :"alex" , 
     age:21 , 
     city:"gilgit", 
@@ -17,7 +17,7 @@ let user  = {
 function profile(){
     console.log("hello " + this.fname)
 }
-let user  = {
+let userTwo  = {
     fname :"alex" , 
     age:21 , 
     city:"gilgit", 
@@ -41,7 +41,7 @@ var userMethods = {
     }
 }
 userMethods.profile()
-let user  = {
+let userThree  = {
     fname :"alex" , 
     age:21 , 
     city:"gilgit", 
@@ -84,7 +84,7 @@ users[0].profile()
 
 
 
-const user =  Object.create(null); // {}
+const userFour =  Object.create(null); // {}
 console.log(user)
 
 
@@ -93,15 +93,15 @@ let u1= {
     key2:"value2",
 }
 
-let u2= {
+let a2= {
     key3:"value3"
 }
 
-console.log(u2.key1)
+console.log(a2.key1)
 
-let u2 = Object.create(u1)  // {}
+let a3 = Object.create(u1)  // {}
 u2.key3 = "value3"
-console.log(u2.key1)
+console.log(a3.key1)
 
 
 
@@ -156,5 +156,5 @@ function registerUser(fnmae, email, password) {
 
 
 
-const u1 = registerUser("Alex" , "alex@gamil.com" ,  "dasdkgj324")
+const a1 = registerUser("Alex" , "alex@gamil.com" ,  "dasdkgj324")
 console.log(u1.profile())
