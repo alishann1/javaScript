@@ -138,7 +138,7 @@ console.log(arr)
 
 
 
-slice
+// slice
 
 const a2 = arr.slice(0, 3)
 console.log(a2)
