@@ -1,66 +1,66 @@
-// Objects 
+// // Objects 
 
-// The code below is not optimized properly because it is not efficient and the function
-// will be called each time a user is created.
+// // The code below is not optimized properly because it is not efficient and the function
+// // will be called each time a user is created.
 
-let userOne = {
-    fname: "Alex",
-    age: 21,
-    city: "Gilgit",
-    status: "active",
-    profile: function () {
-        console.log("hello " + this.fname)
-    }
-}
-
-
-
-
-// Step two
-
-// This code is one step optimized as it won't run the function every time 
-// a user is created but it is still not optimized enough incase we add more methods in the object
-
-function profile() {
-    console.log("hello " + this.fname)
-}
-let userTwo = {
-    fname: "Alex",
-    age: 21,
-    city: "Gilgit",
-    status: "active",
-    profile: profile
-}
+// let userOne = {
+//     fname: "Alex",
+//     age: 21,
+//     city: "Gilgit",
+//     status: "active",
+//     profile: function () {
+//         console.log("hello " + this.fname)
+//     }
+// }
 
 
 
 
-// Step 3 
+// // Step two
 
-// This code is one step more optimized as it has arranged multiple methods inside an object
-// but still we need to add a method in both the objects and add the key and value
+// // This code is one step optimized as it won't run the function every time 
+// // a user is created but it is still not optimized enough incase we add more methods in the object
 
-var userMethods = {
-    profile: function () {
-        console.log("hello " + this.fname)
-    },
-    changeName: function (newName) {
-        this.fname = newName
-    },
-    changeAge: function (newAge) {
-        this.age = newAge
-    }
-}
-userMethods.profile()
-let userThree = {
-    fname: "Alex",
-    age: 21,
-    city: "Gilgit",
-    status: "active",
-    profile: userMethods.profile
-}
+// function profile() {
+//     console.log("hello " + this.fname)
+// }
+// let userTwo = {
+//     fname: "Alex",
+//     age: 21,
+//     city: "Gilgit",
+//     status: "active",
+//     profile: profile
+// }
 
-userThree.profile()
+
+
+
+// // Step 3 
+
+// // This code is one step more optimized as it has arranged multiple methods inside an object
+// // but still we need to add a method in both the objects and add the key and value
+
+// var userMethods = {
+//     profile: function () {
+//         console.log("hello " + this.fname)
+//     },
+//     changeName: function (newName) {
+//         this.fname = newName
+//     },
+//     changeAge: function (newAge) {
+//         this.age = newAge
+//     }
+// }
+// userMethods.profile()
+// let userThree = {
+//     fname: "Alex",
+//     age: 21,
+//     city: "Gilgit",
+//     status: "active",
+//     profile: userMethods.profile
+// }
+
+// userThree.profile()
 
 
 
@@ -88,7 +88,7 @@ function createUser(fullName, email, age, city) {
 let user1 = createUser("Ali", "ali@gmail.com", 21, "GILGIT")
 let user2 = createUser("Alex", "alex@gmail.com", 22, "VANCOUVER")
 
-// console.log(user1)
+console.log(user1)
 users[0].profile()
 
 
