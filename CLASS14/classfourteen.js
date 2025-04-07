@@ -60,7 +60,7 @@ function createUser(fname, email, age) {
 }
 
 
-//4
+    // 4
 createUser.prototype.getName = function () {
     console.log(this.fname);
 }
