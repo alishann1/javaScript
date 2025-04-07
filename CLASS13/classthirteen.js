@@ -67,60 +67,60 @@
 
 
 
-let users = [];
-function createUser(fullName, email, age, city) {
-    // Step1
-    let newUser = {};
-    // Step2
-    newUser.fname = fullName;
-    newUser.email = email;
-    newUser.age = age;
-    newUser.city = city;
-    newUser.profile = function () {
-        console.log("Hello " + this.fname)
-    }
-    // Step3
-    users.push(newUser)
-    // Step4 
-    return "User Registered Successfully!!!";
-}
+// let users = [];
+// function createUser(fullName, email, age, city) {
+//     // Step1
+//     let newUser = {};
+//     // Step2
+//     newUser.fname = fullName;
+//     newUser.email = email;
+//     newUser.age = age;
+//     newUser.city = city;
+//     newUser.profile = function () {
+//         console.log("Hello " + this.fname)
+//     }
+//     // Step3
+//     users.push(newUser)
+//     // Step4 
+//     return "User Registered Successfully!!!";
+// }
 
-let user1 = createUser("Ali", "ali@gmail.com", 21, "GILGIT")
-let user2 = createUser("Alex", "alex@gmail.com", 22, "VANCOUVER")
+// let user1 = createUser("Ali", "ali@gmail.com", 21, "GILGIT")
+// let user2 = createUser("Alex", "alex@gmail.com", 22, "VANCOUVER")
 
-console.log(user1)
-users[0].profile()
-
-
+// console.log(user1)
+// users[0].profile()
 
 
 
-const userFour = Object.create(null); // {}
-console.log(user)
 
 
-let u1 = {
-    key1: "value1",
-    key2: "value2",
-}
-
-let a2 = {
-    key3: "value3"
-}
-
-console.log(a2.key1)
-
-let a3 = Object.create(u1)  // {}
-u2.key3 = "value3"
-console.log(a3.key1)
+// const userFour = Object.create(null); // {}
+// console.log(userFour)
 
 
+// let u1 = {
+//     key1: "value1",
+//     key2: "value2",
+// }
 
-var a = "fsdfds"
-var b = new String("sfsd")
-console.log(b)
-// console.log(b._proto_.toUpperCase())
-console.log(b)
+// let u2 = {
+//     key3: "value3"
+// }
+
+// console.log(a2.key1)
+
+// let a3 = Object.create(u1)  // {}
+// u2.key3 = "value3"
+// console.log(a3.key1)
+
+
+
+// var a = "fsdfds"
+// var b = new String("sfsd")
+// console.log(b)
+// // console.log(b._proto_.toUpperCase())
+// console.log(b)
 
 
 
@@ -144,14 +144,13 @@ const methods = {
     },
     changeAge: function (newAge) {
         this.age = newAge
-    }
-    ,
+    },
     sing: function () {
         return " lalaalalalal"
     }
 }
 function registerUser(fname, email, password) {
-    
+
     // Step one 
     const user = Object.create(methods);
 
