@@ -120,7 +120,7 @@ class User {
 
 }
 
-const user1 = new User("ALex", 21, "a@gmail.com")
+const user1 = new User("Alex", 21, "a@gmail.com")
 console.log(user1)
 
 
