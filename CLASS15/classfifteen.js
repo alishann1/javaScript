@@ -45,15 +45,13 @@ console.log(cat1)
 
 
 
-
-
-
 // Encapsulation
 
 
 class Bank {
 
-    // Private properties
+// Private properties
+
     #balance = 0
     constructor(accountName, accountid, accountType) {
         this.accountName = accountName;
@@ -106,8 +104,8 @@ console.log(acc1.balanceInfo())
 
 // MATH
 console.log(Math)
-// abs
 
+// abs
 var a = 2
 
 // var b  = Math.abs(a)
