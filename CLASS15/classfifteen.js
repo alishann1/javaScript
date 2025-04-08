@@ -175,17 +175,17 @@ var a = 2
 
 
 
-// clousers
+// Closers
 
 
-function outerFUnc() {
+function outerFunc() {
     counter = 0
     return function innerfunc() {
         console.log(counter++)
     }
 }
 
-const f = outerFUnc()
+const f = outerFunc()
 
 f()
 f()
