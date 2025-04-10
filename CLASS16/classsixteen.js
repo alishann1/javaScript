@@ -4,18 +4,18 @@
 // console.dir(document.documentElement)  //root element get
 
 // // query selector 
-// const heading = document.querySelector('h1')  // signle element node
+// const heading = document.querySelector('h1')  // single element node
 // const heading = document.querySelectorAll('h1')   // nodelist of element nodes 
-// const heading = document.querySelector('.heading')   //signle element node
+// const heading = document.querySelector('.heading')   //single element node
 // const heading = document.querySelectorAll('.heading')   // nodelist of element nodes 
-// const heading = document.querySelector('#head1')   // signle element node
+// const heading = document.querySelector('#head1')   // single element node
 
 
 // // get element by id
 // const heading =  document.getElementById("head1")
 
 
-// // get Elemnts by class name 
+// // get Elements by class name 
 // const heading = document.getElementsByClassName("heading")
 
 
