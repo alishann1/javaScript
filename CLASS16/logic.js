@@ -21,6 +21,13 @@ para.forEach((item) => {
     item.style.padding = "10px"
     item.style.marginTop = "3px"
     item.style.textAlign = "center"
+    item.addEventListener("click", () => {
+        if (item.style.color == "orange") {
+            item.style.color = "green"
+        } else {
+            item.style.color = "orange"
+        }
+    })
 
 })
 
