@@ -2,7 +2,7 @@
 const box  = document.querySelector(".box")
 
 box.setAttribute("id", "box1")
-box.setAttribute("title" , "this is main b0x")
+box.setAttribute("title" , "this is main box")
 const res = box.getAttribute("id")
 console.log(box , res)
 box.removeAttribute("id")
