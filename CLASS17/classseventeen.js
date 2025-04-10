@@ -1,4 +1,4 @@
-// attributes 
+// Attributes 
 const box  = document.querySelector(".box")
 
 box.setAttribute("id", "box1")
@@ -9,7 +9,7 @@ box.removeAttribute("id")
 
 
 
-// class
+// Class
 
 console.log(box.classList)
 add
@@ -24,10 +24,10 @@ box.classList.replace("box1" , "box01")
 
 
 
-// remove
+// Remove
 
 
-// toogle
+// Toogle
 box.classList.toggle("box0001")
 
 
@@ -51,7 +51,7 @@ h4.remove()
 
 
 
-// adjacent 
+// Adjacent 
 // beforebegin  afterbegin , beforeend , afterend
 box.insertAdjacentElement("beforebegin" , h4)
 
