@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: orange;
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 13px;
+  margin: 10px 15px 0 15px;
+}
+
+.container {
+  display: flex;
+}
+.menubox {
+  text-align: center;
+  /* border: 2px solid green; */
+  background-color: gray;
+  width: 50%;
+  margin: 20px;
+  min-height: 350px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding: 8px;
+}
+
+.menulist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: orange;
+}
+
+.menulist li button {
+  padding: 5px 10px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  font-size: large;
+}
+
+.menulist li span {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  color: black;
+}
+
+.yourorder {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  /* border: 2px solid green; */
+  background-color: gray;
+  width: 50%;
+  margin: 20px;
+  min-height: 250px;
+  border-radius: 10px;
+  font-size: large;
+  padding: 8px;
+}
+.yourorder li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: orange;
+}
