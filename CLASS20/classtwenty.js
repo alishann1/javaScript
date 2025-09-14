@@ -64,45 +64,45 @@ search.addEventListener("click", () => {
 
 // const p = Promise.resolve("yummy");
 // console.log(p)
-const cards =  document.querySelector(".cards")
-const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
+// const cards =  document.querySelector(".cards")
+// const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users")
 
-fetchUsers.then((data) =>{
-//    console.log(data.json())
-   return data.json()
-}).then((data)=>{
-   data.forEach(user => {
-       console.log(user)
-       cards.innerHTML +=`
-       <div class="card">
-        <div class="img-avatar">
-          <img src="" alt="">
-        </svg>
-        </div>
-        <div class="card-text">
-          <div class="portada">
+// fetchUsers.then((data) =>{
+// //    console.log(data.json())
+//    return data.json()
+// }).then((data)=>{
+//    data.forEach(user => {
+//        console.log(user)
+//        cards.innerHTML +=`
+//        <div class="card">
+//         <div class="img-avatar">
+//           <img src="" alt="">
+//         </svg>
+//         </div>
+//         <div class="card-text">
+//           <div class="portada">
           
-          </div>
-          <div class="title-total">   
-            <div class="title">${user.email}</div>
-            <h2>${user.username}</h2>
+//           </div>
+//           <div class="title-total">   
+//             <div class="title">${user.email}</div>
+//             <h2>${user.username}</h2>
         
-        <div class="desc">${user.company.catchPhrase}</div>
-        <div class="actions">
-          <button><i class="far fa-heart"></i></button>
-          <button><i class="far fa-envelope"></i></button>
-          <button><i class="fas fa-user-friends"></i></button>
-        </div></div>
+//         <div class="desc">${user.company.catchPhrase}</div>
+//         <div class="actions">
+//           <button><i class="far fa-heart"></i></button>
+//           <button><i class="far fa-envelope"></i></button>
+//           <button><i class="fas fa-user-friends"></i></button>
+//         </div></div>
        
-        </div>
+//         </div>
         
        
         
-      </div>
+//       </div>
        
        
        
        
-       `
-   });
-})
+//        `
+//    });
+// })
