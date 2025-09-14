@@ -1,0 +1,1 @@
+const calculateBtn = document.querySelector(".calculate")
